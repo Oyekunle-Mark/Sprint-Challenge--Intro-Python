@@ -86,9 +86,6 @@ for c in cities:
 
 # TODO Get latitude and longitude values from the user
 
-user_input1 = input("Enter first point: ").split(',')
-user_input2 = input("Enter second point: ").split(',')
-
 
 def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
   # within will hold the cities that fall within the specified region
@@ -115,7 +112,12 @@ def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
     return within
 
 
-cities_within = cityreader_stretch(user_input1[0], user_input1[1],
-                                   user_input2[0], user_input2[1], cityreader())
+# print()
+# user_input1 = input("Enter first point: ").split(',')
+# user_input2 = input("Enter second point: ").split(',')
+# print()
 
-[print(city) for city in cities_within]
+# cities_within = cityreader_stretch(user_input1[0], user_input1[1],
+#                                    user_input2[0], user_input2[1], cityreader())
+
+# [print(city) for city in cities_within]
